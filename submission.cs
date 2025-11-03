@@ -3,7 +3,6 @@ using System.Xml.Schema;
 using System.Xml;
 using Newtonsoft.Json;
 using System.IO;
-using System.Text;
 
 
 
@@ -38,35 +37,28 @@ namespace ConsoleApp1
 
         public static string Verification(string xmlUrl, string xsdUrl)
         {
-            StringBuilder errors = new StringBuilder();
-
-            XmlSchemaSet schemaSet = new XmlSchemaSet();
-            schemaSet.Add(null, xsdUrl);
-
-            XmlReaderSettings settings = new XmlReaderSettings();
-            settings.ValidationType = ValidationType.Schema;
-            settings.Schemas = schemaSet;
-            settings.ValidationFlags =
-                XmlSchemaValidationFlags.ReportValidationWarnings |
-                XmlSchemaValidationFlags.ProcessIdentityConstraints;
-            settings.ValidationEventHandler += (sender, e) =>
-            {
-                errors.AppendLine($"Error: {e.Message}");
-            };
-
             try
             {
+                XmlReaderSettings settings = new XmlReaderSettings();
+                settings.Schemas.Add(null, xsdUrl);
+                settings.ValidationType = ValidationType.Schema;
+                string errorMsg = "";
+                settings.ValidationEventHandler += (sender, e) => { errorMsg += e.Message + "\n"; };
+
                 using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
                 {
                     while (reader.Read()) { }
                 }
+
+                if (string.IsNullOrEmpty(errorMsg))
+                    return "No errors are found";
+                else
+                    return "Error during validation: " + errorMsg.Trim();
             }
             catch (Exception ex)
             {
-                errors.AppendLine($"Exception: {ex.Message}");
+                return "Error during validation: " + ex.Message;
             }
-
-            return errors.Length == 0 ? "No errors are found" : errors.ToString();
         }
 
         public static string Xml2Json(string xmlUrl)
