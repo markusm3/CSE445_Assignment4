@@ -20,7 +20,7 @@ namespace ConsoleApp1
     public class Program
     {
         public static string xmlURL = "https://markusm3.github.io/CSE445_Assignment4/Hotels.xml";
-        public static string xmlErrorURL = "https://markusm3.github.io/CSE445_Assignment4/HotelsErrors.xml";
+        public static string xmlErrorURL = "https://markusm3.github.io/CSE445_Assignment4/HotelErrors.xml";
         public static string xsdURL = "https://markusm3.github.io/CSE445_Assignment4/Hotels.xsd";
         
         public static void Main(string[] args)
@@ -81,5 +81,6 @@ namespace ConsoleApp1
     }
 
 }
+
 
 
