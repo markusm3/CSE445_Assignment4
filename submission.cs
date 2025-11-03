@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml.Schema;
 using System.Xml;
 using Newtonsoft.Json;
@@ -22,7 +22,7 @@ namespace ConsoleApp1
         public static string xmlURL = "https://markusm3.github.io/CSE445_Assignment4/Hotels.xml";
         public static string xmlErrorURL = "https://markusm3.github.io/CSE445_Assignment4/HotelsErrors.xml";
         public static string xsdURL = "https://markusm3.github.io/CSE445_Assignment4/Hotels.xsd";
-        
+
         public static void Main(string[] args)
         {
             string result = Verification(xmlURL, xsdURL);
@@ -69,7 +69,7 @@ namespace ConsoleApp1
 
                 string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented, true);
 
-                XmlDocument testDoc = JsonConvert.DeserializeXmlNode(jsonText);
+                JsonConvert.DeserializeXmlNode(jsonText);
 
                 return jsonText;
             }
@@ -81,7 +81,3 @@ namespace ConsoleApp1
     }
 
 }
-
-
-
-
