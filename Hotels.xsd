@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 	<xs:element name="Hotels">
@@ -8,6 +8,7 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
 							<xs:element name="Address">
 								<xs:complexType>
 									<xs:sequence>
@@ -20,9 +21,8 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-							<xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
 						</xs:sequence>
+						<xs:attribute name="Rating" type="xs:decimal" use="optional"/>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
