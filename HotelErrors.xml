@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Hotel>
+	<Hotel>
+		<Name>Westin Tempe</Name>
+		<Address>
+			<Number>11</Number>
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Rating>4.2</Rating>
+	</Hotel>
+
+	<Hotel>
+		<Address>
+			<Number>4400</Number>
+			<Street>S Rural Rd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85282</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+		<Phone>480-921-7000</Phone>
+		<Rating>4.0</Rating>
+	</Hotel>
+
+	<Hotel>
+		<Name>Hilton Scottsdale Resort</Name>
+		<Address>
+			<Number>6333</Number>
+			<Street>N Scottsdale Rd</Street>
+			<City>Scottsdale</City>
+			<State>AZ</State>
+			<Zip>85250</Zip>
+			<NearestAirport>Sky Harbor
+    </Address>
+		<Phone>480-948-7750</Phone>
+		<Rating>4.5</Rating>
+	</Hotel>
+
+	<Hotel>
+		<Name>Marriott Mesa</Name>
+		<Address>
+			<Number>200</Number>
+			<Street>N Centennial Way</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85201</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+		<Rating>4.1</Rating>
+	</Hotel>
+
+	<Hotel>
+		<Name>Hyatt Regency Phoenix</Name>
+		<Name>Hyatt Phoenix</Name>
+		<Address>
+			<Number>122</Number>
+			<Street>N 2nd St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+		<Phone>602-252-1234</Phone>
+		<Phone>800-233-1234</Phone>
+		<Rating>4.3</Rating>
+	</Hotel>
+</Hotel>
