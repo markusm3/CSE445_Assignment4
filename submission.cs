@@ -39,20 +39,21 @@ namespace ConsoleApp1
         {
             try
             {
-                XmlSchemaSet schemas = new XmlSchemaSet();
-                schemas.Add("", xsdUrl);
+                XmlReaderSettings settings = new XmlReaderSettings();
+                settings.Schemas.Add(null, xsdUrl);
+                settings.ValidationType = ValidationType.Schema;
+                string errorMsg = "";
+                settings.ValidationEventHandler += (sender, e) => { errorMsg += e.Message + "\n"; };
 
-                XmlDocument doc = new XmlDocument();
-                doc.Load(xmlUrl);
-
-                string errors = "";
-                doc.Schemas.Add(schemas);
-                doc.Validate((sender, e) =>
+                using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
                 {
-                    errors += e.Message + "\n";
-                });
+                    while (reader.Read()) { }
+                }
 
-                return string.IsNullOrEmpty(errors) ? "No errors are found" : errors.Trim();
+                if (string.IsNullOrEmpty(errorMsg))
+                    return "No errors are found";
+                else
+                    return "Error during validation: " + errorMsg.Trim();
             }
             catch (Exception ex)
             {
