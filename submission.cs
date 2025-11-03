@@ -68,7 +68,7 @@ namespace ConsoleApp1
                 XmlDocument doc = new XmlDocument();
                 doc.Load(xmlUrl);
 
-                string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented, true);
+                string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented);
 
                 JsonConvert.DeserializeXmlNode(jsonText);
 
@@ -82,3 +82,4 @@ namespace ConsoleApp1
     }
 
 }
+
