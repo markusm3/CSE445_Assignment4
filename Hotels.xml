@@ -1,142 +1,124 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Hotels>
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.2">
 		<Name>Westin Tempe</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
 		<Address>
 			<Number>11</Number>
 			<Street>E 7th St</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-968-8885</Phone>
-		<Phone>800-937-8461</Phone>
-		<Rating>4.2</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.0">
 		<Name>Embassy Suites</Name>
+		<Phone>480-921-7000</Phone>
 		<Address>
 			<Number>4400</Number>
 			<Street>S Rural Rd</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85282</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-921-7000</Phone>
-		<Rating>4.0</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.5">
 		<Name>Hilton Scottsdale Resort</Name>
+		<Phone>480-948-7750</Phone>
 		<Address>
 			<Number>6333</Number>
 			<Street>N Scottsdale Rd</Street>
 			<City>Scottsdale</City>
 			<State>AZ</State>
 			<Zip>85250</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-948-7750</Phone>
-		<Rating>4.5</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.1">
 		<Name>Marriott Mesa</Name>
+		<Phone>480-898-8000</Phone>
 		<Address>
 			<Number>200</Number>
 			<Street>N Centennial Way</Street>
 			<City>Mesa</City>
 			<State>AZ</State>
 			<Zip>85201</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-898-8000</Phone>
-		<Rating>4.1</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.3">
 		<Name>Hyatt Regency Phoenix</Name>
+		<Phone>602-252-1234</Phone>
+		<Phone>800-233-1234</Phone>
 		<Address>
 			<Number>122</Number>
 			<Street>N 2nd St</Street>
 			<City>Phoenix</City>
 			<State>AZ</State>
 			<Zip>85004</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>602-252-1234</Phone>
-		<Phone>800-233-1234</Phone>
-		<Rating>4.3</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.0">
 		<Name>Arizona Biltmore</Name>
+		<Phone>602-955-6600</Phone>
 		<Address>
 			<Number>2400</Number>
 			<Street>E Missouri Ave</Street>
 			<City>Phoenix</City>
 			<State>AZ</State>
 			<Zip>85016</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>602-955-6600</Phone>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.6">
 		<Name>JW Marriott Desert Ridge</Name>
+		<Phone>480-293-5000</Phone>
 		<Address>
 			<Number>5350</Number>
 			<Street>E Marriott Dr</Street>
 			<City>Phoenix</City>
 			<State>AZ</State>
 			<Zip>85054</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-293-5000</Phone>
-		<Rating>4.6</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.0">
 		<Name>Omni Scottsdale Resort</Name>
+		<Phone>480-585-4848</Phone>
 		<Address>
 			<Number>150</Number>
 			<Street>N Woodlands Blvd</Street>
 			<City>Scottsdale</City>
 			<State>AZ</State>
 			<Zip>85255</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-585-4848</Phone>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.0">
 		<Name>Hilton Garden Inn Phoenix Midtown</Name>
+		<Phone>602-253-2700</Phone>
 		<Address>
 			<Number>345</Number>
 			<Street>E Van Buren St</Street>
 			<City>Phoenix</City>
 			<State>AZ</State>
 			<Zip>85004</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>602-253-2700</Phone>
-		<Rating>4.0</Rating>
 	</Hotel>
 
-	<Hotel>
+	<Hotel NearestAirport="Sky Harbor" Rating="4.2">
 		<Name>Residence Inn Tempe</Name>
+		<Phone>480-967-1234</Phone>
 		<Address>
 			<Number>933</Number>
 			<Street>S Forest Ave</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			<NearestAirport>Sky Harbor</NearestAirport>
 		</Address>
-		<Phone>480-967-1234</Phone>
-		<Rating>4.2</Rating>
 	</Hotel>
 </Hotels>
